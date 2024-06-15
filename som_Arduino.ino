@@ -104,6 +104,26 @@ void loop() {
       delay(198000);
       musica_opicao();
     }
+    else if (input == 6) {
+      Serial.println("Música escolhida: Танцевать");
+
+      playerMP3.playFolder(1, 4);
+      delay(5000);
+
+      playerMP3.playFolder(2, 6);
+      delay(279000);
+      musica_opicao();
+    }
+    else if (input == 7) {
+      Serial.println("Música escolhida: Танцевать");
+
+      playerMP3.playFolder(1, 4);
+      delay(5000);
+
+      playerMP3.playFolder(2, 7);
+      delay(259000);
+      musica_opicao();
+    }
   }  
   delay(1000);
 }
@@ -126,5 +146,12 @@ void musica_opicao(){
   Serial.println("");
   Serial.println("Танцевать -> 5");
   Serial.println("");
+  Serial.println("________________________________________________________________");
+  Serial.println("");
+  Serial.println("The Seed -> 6");
+  Serial.println("");
+  Serial.println("Runaway -> 7");
+  Serial.println("");
+
 }
 
